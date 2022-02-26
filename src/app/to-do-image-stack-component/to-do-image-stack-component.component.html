@@ -1,0 +1,9 @@
+<div class="divider d-flex align-items-center my-4">
+    <p class="text-center mx-3 mb-0" style="color: #a2aab7;">Shared with</p>
+</div>
+<ul class="list-group rounded-0 list-group-horizontal justify-content-center pb-2">
+    <ng-container *ngFor="let image of images">
+        <app-to-do-image-component [image]="image.image">
+        </app-to-do-image-component>
+    </ng-container>
+</ul>
